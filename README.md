@@ -1,6 +1,6 @@
 # LLM-Project-Investigation-of-Kinematic-Representation-in-LLMs
 
-# Investigation of Kinematic Representation in LLMs
+# Language as Motion: Forging Better Small Language Models with Hybrid Curricula and Kinematic Regularization
 
 [![Paper](https://img.shields.io/badge/paper-PDF-red)](https://link.to.your.paper.on.arxiv.or.elsewhere)
 
