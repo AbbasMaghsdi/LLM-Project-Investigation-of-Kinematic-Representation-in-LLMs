@@ -89,7 +89,6 @@ python experiments/05_t5_curriculum/run_t5_experiments.py \
     --output_dir results/t5_hybrid_reg
 ```
 
-*(You can add similar command examples for your other key experiments).*
 
 ## Citation
 
