@@ -22,7 +22,7 @@ The repository is organized to mirror the experiments presented in the paper:
     -   `02_classification_probe/`: Code for the TinyBert classification experiments (Sections 7.2, 7.3).
     -   `03_diffwrapper/`: Implementation of the `DiffWrapper` with SmolLM and CustomGPT (Section 7.4).
     -   `04_acceleration_penalty/`: Code for applying the penalty to DistilGPT-2 and Mamba (Sections 7.5, 7.6).
-    -   `05_t5_curriculum/`: The complete pipeline for all T5 experiments, including the Hybrid Curriculum and Representational Regularization (Sections 7.12 - 7.17).
+    -   `05_t5_curriculum/`: The complete pipeline for all T5 experiments, including the Hybrid Curriculum and Representational Regularization (Sections 7.12 - 7.17). Our best model's code is inserted here. 
 -   `src/`: Contains the core, reusable components of our methodology.
     -   `components/wrappers.py`: The `DiffWrapper` module.
     -   `components/losses.py`: The `L_accel` acceleration penalty function.
@@ -82,11 +82,7 @@ python experiments/04_acceleration_penalty/train_distilgpt2.py \
 
 This is our best-performing "from scratch" model. The script orchestrates the full three-phase training pipeline.
 ```bash
-python experiments/05_t5_curriculum/run_t5_experiments.py \
-    --model_name t5-small \
-    --config_name "Hybrid-Curriculum+Reg" \
-    --train_file path/to/babylm_train.jsonl \
-    --output_dir results/t5_hybrid_reg
+experiments/05_t5_curriculum/Part6/10-epoch-t5-small-simple-curriculum +representaion+penalty.ipynb \
 ```
 
 
