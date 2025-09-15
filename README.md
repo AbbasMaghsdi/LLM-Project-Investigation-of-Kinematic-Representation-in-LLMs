@@ -16,23 +16,20 @@ Modern language models often represent words as static points, overlooking the s
 
 The repository is organized to mirror the experiments presented in the paper:
 
--   `data_preprocessing/`: Scripts to prepare the BabyLM and SenSet datasets.
+-   `datasets/`: dataset used for training and evaluation.
 -   `experiments/`: Contains individual, runnable scripts for each major experiment.
     -   `01_geometric_analysis/`: Code for the initial trajectory analysis (Section 7.1).
     -   `02_classification_probe/`: Code for the TinyBert classification experiments (Sections 7.2, 7.3).
     -   `03_diffwrapper/`: Implementation of the `DiffWrapper` with SmolLM and CustomGPT (Section 7.4).
     -   `04_acceleration_penalty/`: Code for applying the penalty to DistilGPT-2 and Mamba (Sections 7.5, 7.6).
     -   `05_t5_curriculum/`: The complete pipeline for all T5 experiments, including the Hybrid Curriculum and Representational Regularization (Sections 7.12 - 7.17). Our best model's code is inserted here. 
--   `src/`: Contains the core, reusable components of our methodology.
-    -   `components/wrappers.py`: The `DiffWrapper` module.
-    -   `components/losses.py`: The `L_accel` acceleration penalty function.
-    -   `components/curriculum.py`: The logic for our curriculum learning pipeline.
+
 
 ## Setup
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/Investigation-of-Kinematic-Representation-in-LLMs.git](https://github.com/your-username/Investigation-of-Kinematic-Representation-in-LLMs.git)
+    git clone [https://github.com/AbbasMaghsdi/Investigation-of-Kinematic-Representation-in-LLMs.git](https://github.com/your-username/Investigation-of-Kinematic-Representation-in-LLMs.git)
     cd Investigation-of-Kinematic-Representation-in-LLMs
     ```
 
@@ -52,17 +49,6 @@ Each experiment can be run from the corresponding script in the `experiments/` d
 
 ### Geometric Analysis (Section 7.1)
 
-First, generate the `SenSet` dataset:
-```bash
-python data_preprocessing/generate_senset.py
-```
-Then, run the analysis:
-```bash
-python experiments/01_geometric_analysis/analyze_trajectory.py \
-    --model_name prajjwal1/bert-tiny \
-    --input_file path/to/senset.jsonl \
-    --output_file results/geometric_analysis.csv
-```
 
 ### Acceleration Penalty on DistilGPT-2 (Section 7.5)
 
