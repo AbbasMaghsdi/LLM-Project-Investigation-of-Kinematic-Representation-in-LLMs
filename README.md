@@ -16,7 +16,7 @@ Modern language models often represent words as static points, overlooking the s
 
 The repository is organized to mirror the experiments presented in the paper:
 
--   `datasets/`: dataset used for training and evaluation.
+-   `datasets/`: scripts to download the dataset used for training and evaluation.
 -   `experiments/`: Contains individual, runnable scripts for each major experiment.
     -   `01_geometric_analysis/`: Code for the initial trajectory analysis (Section 7.1).
     -   `02_classification_probe/`: Code for the TinyBert classification experiments (Sections 7.2, 7.3).
@@ -33,7 +33,7 @@ The repository is organized to mirror the experiments presented in the paper:
     cd Investigation-of-Kinematic-Representation-in-LLMs
     ```
 
-2.  **Create a virtual environment and install dependencies:**
+2.  **Create a virtual environment and install dependencies, if you use google colab, the libs in the requirements are enough for curriculum training, if you use kaggle you do not need to install these libs, but if you want to train on your pc you may need more libs:**
     ```bash
     python -m venv venv
     source venv/bin/activate
