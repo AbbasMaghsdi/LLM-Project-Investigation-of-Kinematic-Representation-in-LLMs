@@ -1,0 +1,4 @@
+you can use the following code for downloading and unzipping evaluation datasets. we use the 'fast_eval' dataset to compare the performance of different models with each other:
+
+!wget -O evaluation_data.zip "https://files.osf.io/v1/resources/ryjfm/providers/osfstorage/6819f54f5dc6fc2bff0a7bba/?zip="
+!unzip evaluation_data.zip -d evaluation_data
