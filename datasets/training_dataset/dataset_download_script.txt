@@ -1,0 +1,12 @@
+you can use the following code to download and unzip the babylm dataset. the dataset we used for our project in train_10M:
+
+!git clone https://github.com/babylm/baseline-pretraining.git
+%cd baseline-pretraining
+!wget -O babylm_data.zip "https://files.osf.io/v1/resources/ad7qg/providers/osfstorage/661517db943bee3731dfec25/?zip="
+!unzip babylm_data.zip -d babylm_data
+!unzip babylm_data/train_10M.zip -d babylm_data/train_10M
+!unzip babylm_data/dev.zip -d babylm_data/dev
+!unzip babylm_data/test.zip -d babylm_data/test
+!cat babylm_data/train_10M/train_10M/*.train > babylm_data/babylm_train.txt
+!cat babylm_data/dev/dev/*.dev > babylm_data/babylm_dev.txt
+!cat babylm_data/test/test/*.test > babylm_data/babylm_test.txt
