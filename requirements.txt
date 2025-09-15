@@ -1,0 +1,4 @@
+numpy --force-reinstall --no-cache-dir
+transformers datasets --force-reinstall --no-cache-dir
+rouge-score
+evaluate
