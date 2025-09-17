@@ -72,6 +72,10 @@ This is our best-performing "from scratch" model. The script orchestrates the fu
 ```bash
 experiments/05_t5_curriculum/Part6/10-epoch-t5-small-simple-curriculum +representaion+penalty.ipynb \
 ```
+<img width="1185" height="575" alt="image" src="https://github.com/user-attachments/assets/1cd5a1a3-4d27-49b1-8f55-bc8aca508ca8" />
+
+
+
 
 
 ## Citation
