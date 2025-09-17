@@ -48,8 +48,7 @@ The repository is organized to mirror the experiments presented in the paper:
 Each experiment can be run from the corresponding script in the `experiments/` directory.
 
 ### Geometric Analysis (Section 7.1)
-to do the experiment of this part use RoBERTa_base.py, RoBERTa_acc and RoBERTa_Kenamatic_concatenate.py codes in this path:
-
+to do the experiment of this part use RoBERTa_base.py, RoBERTa_acc and RoBERTa_Kenamatic_concatenate.py codes in the following paths:\
     --experiments/01_geometric_analysis/RoBERTa_base.py \
     --experiments/01_geometric_analysis/RoBERTa_acc.py \
     --experiments/01_geometric_analysis/RoBERTa_Kenamatic_concatenate.py
