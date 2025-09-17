@@ -82,6 +82,7 @@ experiments/05_t5_curriculum/Part6/10-epoch-t5-small-simple-curriculum +represen
 
 
 
+<img width="5400" height="7200" alt="heatmap_data" src="https://github.com/user-attachments/assets/7ca98c17-549f-4cf4-b7a2-ae06fd1090de" />
 
 
 ## Citation
