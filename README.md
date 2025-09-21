@@ -2,8 +2,6 @@
 
 # Language as Motion: Forging Better Small Language Models with Hybrid Curricula and Kinematic Regularization
 
-[![Paper](https://img.shields.io/badge/paper-PDF-red)](https://link.to.your.paper.on.arxiv.or.elsewhere)
-
 This repository contains the official code and experiments for the paper "Investigation of Kinematic Representation in LLMs" by M. Hassan Ranjbar, Amirreza Zare Kordkheili, and M. Abbas Maghsoodi.
 
 ## Abstract
